@@ -88,7 +88,9 @@
     "url-loader": "^4.1.1"
   },
   "lint-staged": {
-    "*.{ts,tsx}": []
+    "*.{ts,tsx}": [
+      "yarn nx affected --target=test"
+    ]
   },
   "prisma": {
     "schema": "libs/shared/orm/prisma/schema.prisma"
