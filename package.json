@@ -10,6 +10,7 @@
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
+    "@prisma/client": "^4.7.1",
     "@tanstack/react-query": "^4.20.4",
     "@trpc/client": "^10.5.0",
     "@trpc/next": "^10.5.0",
@@ -21,27 +22,44 @@
     "env-var": "^7.3.0",
     "neverthrow": "^6.0.0",
     "react-hook-form": "^7.41.0",
+    "tslib": "^2.3.0",
     "zod": "^3.20.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@nrwl/eslint-plugin-nx": "15.3.3",
+    "@nrwl/jest": "15.3.3",
+    "@nrwl/linter": "15.3.3",
     "@nrwl/nest": "^15.3.3",
     "@nrwl/node": "^15.3.3",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/react": "^15.3.3",
     "@nrwl/workspace": "15.3.3",
+    "@types/jest": "28.1.1",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
     "husky": "^8.0.2",
+    "jest": "28.1.1",
+    "jest-environment-jsdom": "28.1.1",
     "lint-staged": "^13.1.0",
     "nx": "15.3.3",
     "prettier": "^2.6.2",
     "prisma": "^4.7.1",
+    "ts-jest": "28.0.5",
+    "ts-node": "10.9.1",
     "typescript": "~4.8.2"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "nx format:write",
+      "yarn nx format:write",
       "yarn nx affected --target=test"
     ]
+  },
+  "prisma": {
+    "schema": "libs/shared/orm/prisma/schema.prisma"
   }
 }
