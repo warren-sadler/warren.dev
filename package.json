@@ -55,7 +55,6 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn nx format:write",
       "yarn nx affected --target=test"
     ]
   },
