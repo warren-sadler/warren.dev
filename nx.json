@@ -32,5 +32,6 @@
       "!{projectRoot}/jest.config.[jt]s"
     ],
     "sharedGlobals": []
-  }
+  },
+  "defaultProject": "api"
 }
