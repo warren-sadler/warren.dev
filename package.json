@@ -54,9 +54,7 @@
     "typescript": "~4.8.2"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "yarn nx affected --target=test"
-    ]
+    "*.{ts,tsx}": []
   },
   "prisma": {
     "schema": "libs/shared/orm/prisma/schema.prisma"
