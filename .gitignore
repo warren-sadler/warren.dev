@@ -41,3 +41,12 @@ Thumbs.db
 
 # Environment Variables
 .env
+
+# IntelliJ
+.idea
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
