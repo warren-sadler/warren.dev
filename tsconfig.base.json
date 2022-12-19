@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@warren.dev/shared/orm": ["libs/shared/orm/src"]
+      "@warren.dev/shared/orm": ["libs/shared/orm/src"],
+      "@warren.dev/shared/schema": ["libs/shared/schema/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

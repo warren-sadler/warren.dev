@@ -5,6 +5,7 @@ dist
 tmp
 /out-tsc
 libs/shared/orm/src
+libs/shared/schema/src
 
 # dependencies
 node_modules
