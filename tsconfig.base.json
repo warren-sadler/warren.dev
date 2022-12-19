@@ -14,9 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "strict": true,
+    "strictNullChecks": true,
     "paths": {
+      "@warren.dev/api/trpc": ["libs/api/trpc/src/index.ts"],
       "@warren.dev/shared/orm": ["libs/shared/orm/src"],
-      "@warren.dev/shared/schema": ["libs/shared/schema/src/index.ts"]
+      "@warren.dev/shared/schema": ["libs/shared/schema/src/index.ts"],
+      "@warren.dev/shared/trpc/client": [
+        "libs/shared/trpc/client/src/index.ts"
+      ],
+      "@warren.dev/shared/trpc/router": ["libs/shared/trpc/router/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

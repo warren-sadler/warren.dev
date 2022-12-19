@@ -1,3 +1,4 @@
+import { TRPCProvider } from '@warren.dev/shared/trpc/client';
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
@@ -9,8 +10,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <TRPCProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </TRPCProvider>
   </StrictMode>
 );
