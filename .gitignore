@@ -50,3 +50,6 @@ Thumbs.db
 *.tfstate.*
 *.tfvars
 .terraform/
+.terraform.lock.hcl
+terraform/env/**/provider.tf
+terraform/env/**/variables.tf
