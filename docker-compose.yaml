@@ -1,0 +1,13 @@
+version: '3.11'
+services:
+  application-db:
+    image: postgres:15.1-alpine
+    container_name: application-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: application
+    ports:
+      - 5432:5432
+    volumes:
+      - ./tmp/application-d:/var/lib/postgresql/data
